@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home-Vital Healthcare</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+    <style>
+      .custom-navbar {
+        font-size: x-large;
+        padding: 1rem 10%;
+        background-color: transparent;
+      }
+
+      .logo {
+        height: 100px;
+        width: auto;
+      }
+
+      .navbar-nav .nav-link {
+        color:rgb(1, 1, 101);
+        padding: 1%;
+        margin-left: 80px;
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: rgb(233, 229, 248);
+      }
+
+      .carousel {
+        max-height: 350px;
+        overflow: hidden;
+      }
+
+      .carousel-item img {
+        max-height: 350px;
+        width: 100%;
+        object-fit: cover;
+      }
+      .book {
+  border: 2px solid rgb(232, 227, 227); 
+}
+.book th, .book td {
+  border: 1px solid rgb(224, 220, 220);
+}
+.book {
+  width: 100%;
+  max-width: 95%;
+  margin: auto;
+  border: 2px solid rgb(232, 227, 227);
+}
+.card-link {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .card-link:hover {
+            color: #0056b3;
+        }
+        .contact-section {
+        background-color: black;
+        color: white;
+        padding: 30px 10px;
+        margin-top: 20%;
+      }
+
+      .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+     
+      .btn-custom {
+        background-color: white;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      .btn-custom:hover {
+        background-color: #331616;
+      }
+      body {
+    background-color: #f0f4f8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.text-blue {
+    color: #007bff;
+}
+
+.nav-pills .nav-link {
+    color: #333;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.custom-input {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.custom-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.custom-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+}
+
+.form-check-input:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+@media (max-width: 450px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container-fluid">
+        <div class="logo">
+          <img src="logo.png" class="logo" alt="logo" />
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavAltMarkup"
+        >
+        <div class="navbar-nav mx-auto">
+          <a class="nav-link" href="home.html">Home</a>
+          <a class="nav-link" href="about.html">About Us</a>
+          <a class="nav-link" href="service.html">Services</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="image1.jpg"
+            class="d-block w-100"
+            alt="Wild Landscape"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="image4.jpg"
+            class="d-block w-100"
+            alt="Camera"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="image3.jpg"
+            class="d-block w-100"
+            alt="Exotic Fruits"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="image 2.jpg"
+            class="d-block w-100"
+            alt="Exotic Fruits"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="image5.jpg"
+            class="d-block w-100"
+            alt="Exotic Fruits"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+<div>
+  <h3 style="text-align: center;padding: 1%; margin-top: 5%; "><b>Medical Services </b></h3>
+</div>
+<div class="container mt-4">
+  <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">General Consultation</h5>
+                  <p class="card-text">
+                      Our general consultation services provide expert medical advice and diagnosis for common health concerns.
+                      Whether it's a routine check-up or a new health issue, our doctors are here to help.
+                  </p>
+                 
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Pediatric Care</h5>
+                  <p class="card-text">
+                      We offer specialized healthcare for children, including routine check-ups, vaccinations, and treatment for common childhood illnesses.
+                  </p>
+                  
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Emergency Services</h5>
+                  <p class="card-text">
+                      Our emergency department is available 24/7 to provide immediate care for critical health conditions and accidents.
+                  </p>
+                
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Laboratory Testing</h5>
+                  <p class="card-text">
+                      We offer a variety of diagnostic tests, including blood tests, urine analysis, and imaging, to ensure accurate diagnosis and treatment.
+                  </p>
+                  
+              </div>
+          </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Physiotherapy</h5>
+                  <p class="card-text">
+                      Our physiotherapy services help patients recover from injuries, surgeries, and chronic conditions through specialized exercises and therapies.
+                  </p>
+                
+              </div>
+          </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Mental Health Support</h5>
+                  <p class="card-text">
+                      We provide counseling and psychiatric services for individuals dealing with stress, anxiety, depression, and other mental health concerns.
+                  </p>
+            
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+    <div>
+      <h4 style="text-align: left; padding: 1%; margin-top: 5%; color: rgb(141, 124, 141);"><b>Book An Appointment</b></h4>
+      <div class="table-responsive">
+        <table class="table table-striped book" style="color: rgb(141, 124, 141);">
+          <thead>
+            <tr>
+              <th scope="col">SPECIALITY</th>
+              <th scope="col">CONSULTANT'S NAME</th>
+              <th scope="col">DAYS</th>
+              <th scope="col">TIMINGS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Gastroenterologist</th>
+              <td>Prof. Dr. Victor John <br>MBBS, MRCP, FRCP, M.D. (Edin.)</td>
+              <td>Wed <br>Thu</td>
+              <td>02:00 pm to 04:00 pm <br>02:00 pm to 04:00 pm</td>
+            </tr>
+            <tr>
+              <th scope="row">Urologist</th>
+              <td>Prof. Dr. Michael Smith <br>MBBS, FRCS (Ed)</td>
+              <td>Mon to Thu</td>
+              <td>05:00 pm to 07:00 pm</td>
+            </tr>
+            <tr>
+              <th scope="row">Rheumatology / Medicine (Joints Specialist)</th>
+              <td>Dr. James Brown <br> MBBS, FRCP, MRCP (UK), SCE, (Rheumatology) CCT, (Rheumatology+GIM), MFMLM</td>
+              <td>Tue to Sat</td>
+              <td>03:00 pm to 05:00 pm</td>
+            </tr>
+            <tr>
+              <th scope="row">Thoracic Surgery / Chest Surgery</th>
+              <td>Dr. Sarah Lee <br>MBBS, FCPS</td>
+              <td>Wednesday</td>
+              <td>04:00 pm to 06:00 pm</td>
+            </tr>
+            <tr>
+              <th scope="row">Pediatrics</th>
+              <td>Dr. William Davis <br>MBBS, DCH, MCPS</td>
+              <td>Mon, Wed, Thu, Fri</td>
+              <td>06:00 pm to 08:00 pm</td>
+            </tr>
+            <tr>
+              <th scope="row">General Physician/Family Medicine</th>
+              <td>Prof. Emily Johnson <br>Consultant General Physician MBBS, FCPS, MRCGP, PhD in Health Science, FRCGP</td>
+              <td>Mon, Wed</td>
+              <td>07:00 pm to 08:00 pm</td>
+            </tr>
+            <tr>
+              <th scope="row">General Surgery</th>
+              <td>Dr. David Martinez <br>MBBS, FCPS</td>
+              <td>Mon, Fri</td>
+              <td>06:00 pm to 07:00 pm</td>
+            </tr>
+            <tr>
+              <th scope="row">Ortho & Spine</th>
+              <td>Dr. Richard Taylor <br> MBBS, DBS (Eng), MRCS (Eng), FRCS Tr. & Orth.</td>
+              <td>Fri</td>
+              <td>03:00 pm to 05:00 pm</td>
+            </tr>
+            <tr>
+              <th scope="row">Internal Medicine</th>
+              <td>Dr. Sarah White <br>MBBS, MRCP (UK) Medicine</td>
+              <td>Wed, Thu</td>
+              <td>03:00 pm to 05:00 pm</td>
+            </tr>
+            <tr>
+              <th scope="row">Aesthetic Medicine</th>
+              <td>Dr. Olivia Harris <br>MBBS, MCPS (DOW)</td>
+              <td>Wed, Thu</td>
+              <td>03:00 pm to 05:00 pm</td>
+            </tr>
+            <tr>
+              <th scope="row">Pediatric Cardiologist</th>
+              <td>Prof. Dr. Ethan Clark <br> MBBS, (MRCPCH) (UK)</td>
+              <td>Mon, Thu, Fri</td>
+              <td>Thu, Fri 05:00 pm to 07:00 pm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
+    <div>
+      <h3 style="text-align: center; padding: 1%; margin-top: 5%;">
+        <b>Services for Doctors</b>
+      </h3>
+    </div>
+    <div class="container mt-4">
+      <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Medical Workshops</h5>
+                      <p class="card-text">
+                          Hands-on training sessions led by experienced professionals, covering the latest medical techniques and advancements.
+                      </p>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Residency Programs</h5>
+                      <p class="card-text">
+                          Comprehensive residency programs designed to provide future doctors with real-world medical experience and mentorship.
+                      </p>
+                    
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Continuing Medical Education</h5>
+                      <p class="card-text">
+                          Keep up with the latest developments in medicine through our accredited CME courses and certification programs.
+                      </p>
+                     
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Medical Research Opportunities</h5>
+                      <p class="card-text">
+                          Engage in cutting-edge medical research with top institutions and contribute to scientific advancements.
+                      </p>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Telemedicine Training</h5>
+                      <p class="card-text">
+                          Learn how to efficiently conduct virtual consultations and provide remote medical services to patients worldwide.
+                      </p>
+                    
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Clinical Simulation Labs</h5>
+                      <p class="card-text">
+                          Gain practical experience through simulated patient interactions and emergency response scenarios.
+                      </p>
+                     
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container d-flex justify-content-center align-items-center ">
+      <div class="form-container">
+          <h2 class="text-center fw-bold text-gold">Welcome</h2>
+          <p class="text-center text-muted">Book  an Appointment here</p>
+          <ul class="nav nav-pills nav-justified mb-3">
+              <li class="nav-item">
+                  <a class="nav-link active" data-bs-toggle="pill" href="#pills-login">For Patients</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="pill" href="#pills-register">For Doctors</a>
+              </li>
+          </ul>
+          <div class="tab-content">
+        
+              <div class="tab-pane fade show active" id="pills-login">
+                <form>
+                  <div class="mb-3">
+                      <input type="text" class="form-control custom-input" placeholder="Full Name" required>
+                  </div>
+                 
+                  <div class="mb-3">
+                      <input type="email" class="form-control custom-input" placeholder="Email" required>
+                  </div>
+                  <div class="mb-3">
+                    <select class="form-control custom-input" required>
+                        <option value="" disabled selected>Select a Doctor</option>
+                        <option value="dr-victor-john">Prof. Dr. Victor John</option>
+                        <option value="dr-michael-smith">Prof. Dr. Michael Smith</option>
+                        <option value="dr-james-brown">Dr. James Brown</option>
+                        <option value="dr-sarah-lee">Dr. Sarah Lee</option>
+                        <option value="dr-william-davis">Dr. William Davis</option>
+                        <option value="dr-emily-johnson">Prof. Emily Johnson</option>
+                        <option value="dr-david-martinez">Dr. David Martinez</option>
+                        <option value="dr-richard-taylor">Dr. Richard Taylor</option>
+                        <option value="dr-sarah-white">Dr. Sarah White</option>
+                        <option value="dr-olivia-harris">Dr. Olivia Harris</option>
+                        <option value="dr-ethan-clark">Prof. Dr. Ethan Clark</option>
+                    </select>
+                </div>
+                
+                  <div class="mb-3">
+                    <input type="date" class="form-control custom-input" placeholder="Date" required>
+                </div>
+                  
+                  <div class="form-check d-flex justify-content-center mb-3">
+                      <input class="form-check-input" type="checkbox" id="registerCheck">
+                      <label class="form-check-label" for="registerCheck">I agree to the terms</label>
+                  </div>
+                  <button type="submit" class="btn btn-black w-100 custom-btn"  id="button" onclick="clickMe()">Book Now</button>
+              </form>
+              </div>
+          
+              <div class="tab-pane fade" id="pills-register">
+                  <form>
+                      <div class="mb-3">
+                          <input type="text" class="form-control custom-input" placeholder="Full Name" required>
+                      </div>
+                      
+                      <div class="mb-3">
+                          <input type="email" class="form-control custom-input" placeholder="Email" required>
+                      </div>
+                      <div class="mb-3">
+                        <select class="form-control custom-input" required>
+                            <option value="" disabled selected>Select a Mentor Doctor</option>
+                            <option value="dr-victor-john">Prof. Dr. Victor John</option>
+                            <option value="dr-michael-smith">Prof. Dr. Michael Smith</option>
+                            <option value="dr-james-brown">Dr. James Brown</option>
+                            <option value="dr-sarah-lee">Dr. Sarah Lee</option>
+                            <option value="dr-william-davis">Dr. William Davis</option>
+                            <option value="dr-emily-johnson">Prof. Emily Johnson</option>
+                            <option value="dr-david-martinez">Dr. David Martinez</option>
+                            <option value="dr-richard-taylor">Dr. Richard Taylor</option>
+                            <option value="dr-sarah-white">Dr. Sarah White</option>
+                            <option value="dr-olivia-harris">Dr. Olivia Harris</option>
+                            <option value="dr-ethan-clark">Prof. Dr. Ethan Clark</option>
+                        </select>
+                    </div>
+                    
+                  <div class="mb-3">
+                    <input type="date" class="form-control custom-input" placeholder="Date" required>
+                </div>
+                      <div class="form-check d-flex justify-content-center mb-3">
+                          <input class="form-check-input" type="checkbox" id="registerCheck">
+                          <label class="form-check-label" for="registerCheck">I agree to the terms</label>
+                      </div>
+                      <button type="submit" class="btn btn-black w-100 custom-btn"  id="button" onclick="clickMe()">Submit Application </button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+    <br><br>
+    <div class="contact-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><b>Vital Healthcare</b></h5>
+                    <p>936 Fulton Street, Lavington, Kenya</p>
+                    <p><a href="#" class="text-white">Contact Us</a> | 718-62-4000</p>
+                </div>
+                <div class="col-md-4">
+                  <h5>Join Our Wellness Program</h5>
+                  <p>Subscribe for health tips, wellness updates, and exclusive healthcare services.</p>
+                  <a href="contact.html" class="btn btn-custom">Contact Us</a>
+                </div>
+                <div class="col-md-4">
+                    <h5><b>Follow Us</b></h5>
+                    <i class="fab fa-facebook fa-2x me-2"></i>
+                    <i class="fab fa-instagram fa-2x me-2"></i>
+                    <i class="fab fa-twitter fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Vital Healthcare. All rights reserved.</p>
+    </footer>
+    <script>
+      function clickMe() {
+        alert("Thank you for contacting us! We will get back to you soon.");
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
