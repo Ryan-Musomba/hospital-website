@@ -86,7 +86,7 @@
         background-color: black;
         color: white;
         padding: 30px 10px;
-        margin-top: 20%;
+        margin-top: 10%;
       }
      
       .text {
@@ -108,7 +108,7 @@
       .image {
         flex: 1;
         display: flex;
-        justify-content: flex-end;
+      
       }
 
       .image img {
@@ -139,6 +139,13 @@
         text-align: center;
         padding: 15px;
       } 
+      .content-text p {
+  font-size: 1rem;  
+  color: #faf5f5;
+  font-weight: normal;  
+  margin: 20px;  
+  padding: 10px;  
+}
 
 
 @media (max-width: 768px) {
@@ -166,6 +173,26 @@
 
   .registerbtn {
     width: 100%;
+  }
+  .content {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .content-text {
+    max-width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .content-text h1 {
+    font-size: 1.8rem;
+  }
+
+ 
+  .image img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -229,14 +256,14 @@
     <div class="content">
       <div class="content-text">
         <h1>The Joy of a Healthy Life</h1>
-        <p>
+        <p >
           We provide top-quality medical care with a compassionate touch,
           ensuring you receive the treatment and support you deserve. From
           preventive care to specialized treatments, our expert team is
           dedicated to keeping you healthy at every stage of life. Experience
           healthcare that truly cares—because your vitality matters.
         </p>
-        <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+        <button class="btn btn-custom" onclick="window.location.href='appointment.html'">
           Get Appointment
         </button>
         

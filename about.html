@@ -18,6 +18,9 @@
   referrerpolicy="no-referrer"
 />
     <style>
+      body{
+        overflow-x: hidden;
+      }
       .custom-navbar {
         font-size: x-large;
         padding: 1rem 10%;
@@ -100,7 +103,7 @@
       }
       .history {
         margin-top: 5%;
-        margin-bottom: 15%;
+        margin-bottom: 5%;
       }
       .msg-container {
         display: flex;
@@ -109,7 +112,7 @@
         width: 80%;
         max-width: 900px;
         margin: 3% auto;
-        padding: 20px;
+        padding: 10px;
         gap: 20px;
       }
 
@@ -138,7 +141,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
   max-width: 80%;
   margin: auto;
 }
@@ -211,6 +214,33 @@
   border-radius: 10px;
   object-fit: cover;
 }
+.card-layout {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  padding: 50px;
+  padding-left: 5%;
+  gap: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 18rem; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-title {
+  text-align: center;
+ 
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
       @media (max-width: 768px) {
         .container {
           flex-direction: column;
@@ -237,8 +267,17 @@
           margin-top: 20px;
         }
         .staff-member {
-          width: 40%;
+          width:40%;
         }
+        .card-layout {
+    padding: 20px; 
+    padding-left: 0;
+  }
+
+  .card {
+    width: 90%; 
+    max-width: 18rem;
+  }
       }
     </style>
   </head>
@@ -301,7 +340,7 @@
         </p>
       </div>
     </div>
-    <br /><br /><br />
+  
     <div class="history">
       <h3 style="text-align: center"><b>Our Background </b></h3>
       <div class="msg-container">
@@ -321,7 +360,7 @@
         </div>
       </div>
     </div>
-    <div class="staff">
+    <div class="staff mt-2">
       <h3 style="text-align: center"><b>Our Team</b></h3>
       <div class="staff-container">
         <div class="staff-member">
@@ -358,6 +397,37 @@
         </div>
       </div>
     </div>
+    <div class="card-layout">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body text-center">
+          <img src="aim.png" alt="Aim Icon" width="50" height="50">
+          <h5 class="card-title"><b>Our Aim</b></h5>
+          <p class="card-text">
+            We strive to provide exceptional services that enhance well-being and quality of life. Our goal is to ensure personalized care tailored to individual needs. Through innovation and expertise, we continuously improve our offerings. Commitment to excellence drives everything we do.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body text-center">
+          <img src="values.png" alt="Values Icon" width="50" height="50">
+          <h5 class="card-title"><b>Our Values</b></h5>
+          <p class="card-text">
+            Integrity and compassion are at the heart of our services. We prioritize trust, transparency, and ethical practices in all interactions. Our team is dedicated to delivering care with empathy and professionalism. We foster a culture of respect, inclusivity, and continuous growth.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body text-center">
+          <img src="whyus.png" alt="Why Us Icon" width="50" height="50">
+          <h5 class="card-title"><b>Why Us</b></h5>
+          <p class="card-text">
+            Our experienced professionals are committed to providing top-quality services. We focus on client satisfaction by offering reliable and efficient solutions. Innovation and personalized care set us apart from the rest. Choosing us means choosing excellence, dedication, and trust.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+
     <div class="accordion" id="accordionPanelsStayOpenExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
@@ -369,7 +439,7 @@
             aria-expanded="true"
             aria-controls="panelsStayOpen-collapseOne"
           >
-            Our Aim
+          How can I schedule an appointment?
           </button>
         </h2>
         <div
@@ -378,17 +448,7 @@
           aria-labelledby="headingOne"
         >
           <div class="accordion-body">
-            At Vital Healthcare, our aim is to provide world-class medical
-            services that prioritize patient well-being through innovation and
-            excellence. We strive to bridge the gap between advanced medical
-            technology and compassionate, personalized care. By focusing on
-            preventive healthcare, early intervention, and effective treatments,
-            we work towards building a healthier future. Our goal is to make
-            high-quality healthcare accessible and reliable for individuals and
-            communities. We continuously enhance our services to meet the
-            evolving needs of modern healthcare. Through dedication and
-            expertise, we are committed to improving lives and ensuring better
-            health outcomes.
+            You can schedule an appointment easily through our website or by calling our office at [718-62-4000]. We also offer booking through our patient portal for added convenience. If you prefer, our staff can assist with scheduling during business hours.
           </div>
         </div>
       </div>
@@ -402,7 +462,7 @@
             aria-expanded="false"
             aria-controls="panelsStayOpen-collapseTwo"
           >
-            Core Values
+          Do you accept insurance?
           </button>
         </h2>
         <div
@@ -411,7 +471,7 @@
           aria-labelledby="headingTwo"
         >
           <div class="accordion-body">
-            Integrity, compassion, and excellence define our core values at Vital Healthcare. We uphold the highest ethical standards, ensuring transparency and trust in all our interactions. Our patient-centered approach emphasizes empathy, treating every individual with respect and dignity. Innovation and continuous improvement drive us to deliver cutting-edge medical solutions. We foster collaboration among healthcare professionals to enhance efficiency and patient care. Every decision we make is guided by our commitment to quality, safety, and holistic well-being.
+            Yes, we accept various insurance plans. Visit our "Appointment" page for a list of providers we work with. You can also contact our billing department to confirm whether your insurance is accepted. We are happy to assist with any insurance-related questions
             </p>
           </div>
         </div>
@@ -426,7 +486,7 @@
             aria-expanded="false"
             aria-controls="panelsStayOpen-collapseThree"
           >
-            Why Us
+          What should I bring to my first appointment?
           </button>
         </h2>
         <div
@@ -435,14 +495,14 @@
           aria-labelledby="headingThree"
         >
           <div class="accordion-body">
-            Vital Healthcare stands out for its commitment to exceptional medical care, innovation, and patient satisfaction. Our team of experienced professionals ensures accurate diagnoses and effective treatments tailored to individual needs. We offer state-of-the-art facilities, advanced technology, and a patient-friendly environment for optimal care. Beyond treatment, we emphasize preventive healthcare and community wellness programs. Our holistic approach integrates expertise, empathy, and excellence to redefine the healthcare experience. Choosing Vital Healthcare means choosing a trusted partner dedicated to your lifelong well-being.
+            Please bring your insurance card, a valid ID, and any relevant medical records. If you’re on medications, have a list of current prescriptions. This helps us provide the best care and ensures all your information is up to date.
             </p>
           </div>
         </div>
       </div>
     </div>
-    <br /><br />
-    <div class="contact-section text-center">
+
+    <div class="contact-section text-center mt-5">
       <div class="me">
         <div class="row">
           <div class="col-md-4">

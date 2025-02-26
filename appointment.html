@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+    <style>
+body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      .custom-navbar {
+        font-size: x-large;
+        padding: 1rem 10%;
+        background-color: #f8f9fa;
+      }
+
+      .logo {
+        height: 100px;
+        width: auto;
+      }
+
+      .navbar-nav .nav-link {
+        color: rgb(114, 109, 109);
+        padding: 1%;
+        margin-left: 80px;
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: rgb(233, 229, 248);
+      }
+      .custom-navbar {
+    font-size: x-large;
+    padding: 1rem 10%;
+    background-color: transparent;
+    
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.text-blue {
+    color: #007bff;
+}
+
+
+.custom-input {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.custom-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.custom-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+}
+
+.form-check-input:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.book {
+  border: 2px solid rgb(232, 227, 227); 
+}
+.book th, .book td {
+  border: 1px solid rgb(224, 220, 220);
+}
+.book {
+  width: 100%;
+  max-width: 95%;
+  margin: auto;
+  border: 2px solid rgb(232, 227, 227);
+}
+.footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+
+      
+@media (max-width: 450px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <div class="logo">
+        <img src="logo.png" class="logo" alt="logo" />
+      </div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNavAltMarkup"
+      >
+      <div class="navbar-nav mx-auto">
+        <a class="nav-link" href="home.html">Home</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href="service.html">Services</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </nav>
+    <div>
+        <h4 style="text-align: left; padding: 1%; margin-top: 5%; color: rgb(141, 124, 141);"><b>Book An Appointment</b></h4>
+        <div class="table-responsive">
+          <table class="table table-striped book" style="color: rgb(141, 124, 141);">
+            <thead>
+              <tr>
+                <th scope="col">SPECIALITY</th>
+                <th scope="col">CONSULTANT'S NAME</th>
+                <th scope="col">DAYS</th>
+                <th scope="col">TIMINGS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Gastroenterologist</th>
+                <td>Prof. Dr. Victor John <br>MBBS, MRCP, FRCP, M.D. (Edin.)</td>
+                <td>Wed <br>Thu</td>
+                <td>02:00 pm to 04:00 pm <br>02:00 pm to 04:00 pm</td>
+              </tr>
+              <tr>
+                <th scope="row">Urologist</th>
+                <td>Prof. Dr. Michael Smith <br>MBBS, FRCS (Ed)</td>
+                <td>Mon to Thu</td>
+                <td>05:00 pm to 07:00 pm</td>
+              </tr>
+              <tr>
+                <th scope="row">Rheumatology / Medicine (Joints Specialist)</th>
+                <td>Dr. James Brown <br> MBBS, FRCP, MRCP (UK), SCE, (Rheumatology) CCT, (Rheumatology+GIM), MFMLM</td>
+                <td>Tue to Sat</td>
+                <td>03:00 pm to 05:00 pm</td>
+              </tr>
+              <tr>
+                <th scope="row">Thoracic Surgery / Chest Surgery</th>
+                <td>Dr. Sarah Lee <br>MBBS, FCPS</td>
+                <td>Wednesday</td>
+                <td>04:00 pm to 06:00 pm</td>
+              </tr>
+              <tr>
+                <th scope="row">Pediatrics</th>
+                <td>Dr. William Davis <br>MBBS, DCH, MCPS</td>
+                <td>Mon, Wed, Thu, Fri</td>
+                <td>06:00 pm to 08:00 pm</td>
+              </tr>
+              <tr>
+                <th scope="row">General Physician/Family Medicine</th>
+                <td>Prof. Emily Johnson <br>Consultant General Physician MBBS, FCPS, MRCGP, PhD in Health Science, FRCGP</td>
+                <td>Mon, Wed</td>
+                <td>07:00 pm to 08:00 pm</td>
+              </tr>
+              <tr>
+                <th scope="row">General Surgery</th>
+                <td>Dr. David Martinez <br>MBBS, FCPS</td>
+                <td>Mon, Fri</td>
+                <td>06:00 pm to 07:00 pm</td>
+              </tr>
+              <tr>
+                <th scope="row">Ortho & Spine</th>
+                <td>Dr. Richard Taylor <br> MBBS, DBS (Eng), MRCS (Eng), FRCS Tr. & Orth.</td>
+                <td>Fri</td>
+                <td>03:00 pm to 05:00 pm</td>
+              </tr>
+              <tr>
+                <th scope="row">Internal Medicine</th>
+                <td>Dr. Sarah White <br>MBBS, MRCP (UK) Medicine</td>
+                <td>Wed, Thu</td>
+                <td>03:00 pm to 05:00 pm</td>
+              </tr>
+              <tr>
+                <th scope="row">Aesthetic Medicine</th>
+                <td>Dr. Olivia Harris <br>MBBS, MCPS (DOW)</td>
+                <td>Wed, Thu</td>
+                <td>03:00 pm to 05:00 pm</td>
+              </tr>
+              <tr>
+                <th scope="row">Pediatric Cardiologist</th>
+                <td>Prof. Dr. Ethan Clark <br> MBBS, (MRCPCH) (UK)</td>
+                <td>Mon, Thu, Fri</td>
+                <td>Thu, Fri 05:00 pm to 07:00 pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+      </div>
+    <br><br>
+    <div class="container d-flex justify-content-center align-items-center ">
+        <div class="form-container">
+            <h2 class="text-center fw-bold text-gold">Welcome</h2>
+            <p class="text-center text-muted">Book  an Appointment here</p>
+            <ul class="nav nav-pills nav-justified mb-3">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="pill" href="#pills-login">For Patients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#pills-register">For Doctors</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+          
+                <div class="tab-pane fade show active" id="pills-login">
+                  <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control custom-input" placeholder="Full Name" required>
+                    </div>
+                   
+                    <div class="mb-3">
+                        <input type="email" class="form-control custom-input" placeholder="Email" required>
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-control custom-input" required>
+                          <option value="" disabled selected>Select a Doctor</option>
+                          <option value="dr-victor-john">Prof. Dr. Victor John</option>
+                          <option value="dr-michael-smith">Prof. Dr. Michael Smith</option>
+                          <option value="dr-james-brown">Dr. James Brown</option>
+                          <option value="dr-sarah-lee">Dr. Sarah Lee</option>
+                          <option value="dr-william-davis">Dr. William Davis</option>
+                          <option value="dr-emily-johnson">Prof. Emily Johnson</option>
+                          <option value="dr-david-martinez">Dr. David Martinez</option>
+                          <option value="dr-richard-taylor">Dr. Richard Taylor</option>
+                          <option value="dr-sarah-white">Dr. Sarah White</option>
+                          <option value="dr-olivia-harris">Dr. Olivia Harris</option>
+                          <option value="dr-ethan-clark">Prof. Dr. Ethan Clark</option>
+                      </select>
+                  </div>
+                  <div class="mb-3">
+                    <select class="form-control custom-input" required>
+                        <option value="" disabled selected>Select a Speciality</option>
+                        <option value="Gastroenterologist">Gastroenterologist</option>
+                        <option value="Urologist">Urologist</option>
+                        <option value="Rheumatology">Rheumatology / Medicine (Joints Specialist)</option>
+                        <option value="Thoracic Surgery">Thoracic Surgery / Chest Surgery</option>
+                        <option value="Pediatrics">Pediatrics</option>
+                        <option value="General Physician">General Physician/Family Medicine</option>
+                        <option value="General Surgery">General Surgery</option>
+                        <option value="Ortho & Spine">Ortho & Spine</option>
+                        <option value="Internal Medicine">Internal Medicine</option>
+                        <option value="Aesthetic Medicine">Aesthetic Medicine</option>
+                        <option value="Pediatric Cardiologist">Pediatric Cardiologist</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                  <select class="form-control custom-input" required>
+                      <option value="" disabled selected>Select an Insurance Company</option>
+                      <option value="jubilee-insurance">Jubilee Insurance</option>
+                      <option value="britam-insurance">Britam Insurance</option>
+                      <option value="cic-insurance">CIC Insurance Group</option>
+                      <option value="aar-insurance">AAR Insurance</option>
+                      <option value="old-mutual">Old Mutual Kenya</option>
+                      <option value="apa-insurance">APA Insurance</option>
+                  </select>
+              </div>
+              
+                    <div class="mb-3">
+                      <input type="date" class="form-control custom-input" placeholder="Date" required>
+                  </div>
+                    
+                    <div class="form-check d-flex justify-content-center mb-3">
+                        <input class="form-check-input" type="checkbox" id="registerCheck">
+                        <label class="form-check-label" for="registerCheck">I agree to the terms</label>
+                    </div>
+                    <button type="submit" class="btn btn-black w-100 custom-btn"  id="button" onclick="clickMe()">Book Now</button>
+                </form>
+                </div>
+            
+                <div class="tab-pane fade" id="pills-register">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control custom-input" placeholder="Full Name" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <input type="email" class="form-control custom-input" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                          <select class="form-control custom-input" required>
+                              <option value="" disabled selected>Select a Mentor Doctor</option>
+                              <option value="dr-victor-john">Prof. Dr. Victor John</option>
+                              <option value="dr-michael-smith">Prof. Dr. Michael Smith</option>
+                              <option value="dr-james-brown">Dr. James Brown</option>
+                              <option value="dr-sarah-lee">Dr. Sarah Lee</option>
+                              <option value="dr-william-davis">Dr. William Davis</option>
+                              <option value="dr-emily-johnson">Prof. Emily Johnson</option>
+                              <option value="dr-david-martinez">Dr. David Martinez</option>
+                              <option value="dr-richard-taylor">Dr. Richard Taylor</option>
+                              <option value="dr-sarah-white">Dr. Sarah White</option>
+                              <option value="dr-olivia-harris">Dr. Olivia Harris</option>
+                              <option value="dr-ethan-clark">Prof. Dr. Ethan Clark</option>
+                          </select>
+                      </div>
+                      
+                    <div class="mb-3">
+                      <input type="date" class="form-control custom-input" placeholder="Date" required>
+                  </div>
+                     
+                  
+                        <div class="form-check d-flex justify-content-center mb-3">
+                            <input class="form-check-input" type="checkbox" id="registerCheck">
+                            <label class="form-check-label" for="registerCheck">I agree to the terms</label>
+                        </div>
+                        <button type="submit" class="btn btn-black w-100 custom-btn"  id="button" onclick="clickMe()">Submit Application </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <footer class="footer">
+      <p>&copy; 2025 Vital Healthcare. All rights reserved.</p>
+  </footer>
+    <script>
+        function clickMe() {
+          alert("Thank you for contacting us! We will get back to you soon.");
+        }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
